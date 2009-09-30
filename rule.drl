@@ -1,0 +1,12 @@
+package foo.bar
+ declare Cheese 
+ name: String 
+ price: Integer 
+ end 
+ rule 'whee' 
+ when 
+ c: Cheese() 
+ then 
+ c.setPrice(42); 
+ System.out.println(42);
+ end
